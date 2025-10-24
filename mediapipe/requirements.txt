@@ -1,0 +1,9 @@
+mediapipe 
+opencv-python 
+numpy
+matplotlib
+sounddevice 
+absl-py 
+protobuf 
+attrs 
+flatbuffers
