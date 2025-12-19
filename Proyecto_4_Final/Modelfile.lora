@@ -1,0 +1,11 @@
+# Modelfile para crear un modelo en Ollama desde un GGUF fusionado (LoRA + base)
+# Este GGUF se genera con export/convert_lora_to_gguf.py
+# Ajusta la ruta si usas un nombre/ubicación diferente del archivo .gguf
+
+FROM ./exportados/tutor_5epoch.gguf
+
+# Instrucción general del modelo (estilo pedagógico del tutor)
+SYSTEM "Eres un tutor de programación experto, paciente, claro y didáctico. Explicas paso a paso, incluyes ejemplos, analizas complejidad temporal y espacial, y señalas errores comunes. Responde SIEMPRE en español."
+
+# Opcional: parámetros de inferencia por defecto
+PARAMETER temperature 0.7
